@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+/*Colors: https://coolors.co/f1f7ee-b0bea9-92aa83-e0edc5-4c061d*/
+
+body {
+    background-color: #F1F7EE;
+    padding: 10px;
+}
+
+h1 {
+    color: #4C061D;
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 150%;
+    margin: 0;
+}
+
+h2 {
+    color: #4C061D;
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.header {
+    background-color: #92AA83;
+    padding: 15px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 25px;
+}
+
+/*Converter*/
+
+.container {
+    display: flex;
+    flex-direction: column;
+
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+    color: #4C061D;
+    text-align: center;
+    font-size: 2rem;
+
+}
+
+/*color display*/
+.display {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400;
+    color: #4C061D;
+    text-align: center;
+    font-size: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.color {
+    width: 10rem;
+    height: 10rem;
+    background-color: rgb(0, 0, 0);
+    border: solid black 2px;
+}
+
+/*rgb input*/
+.rgb {
+    text-transform: uppercase;
+}
+
+.rgb input {
+    width: 4rem;
+    height: 2rem;
+    font-size: 1.5rem;
+    text-align: center;
+
+    /*hide box styling*/
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    background-color: #F1F7EE;
+}
+
+/*buttons*/
+.buttonDisplay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    background-color: #E0EDC5;
+    font-size: 1rem;
+    width: 110px;
+    min-height: 50px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: black solid 1px;
+    margin: 2px 2px;
+    color: #4C061D;
+}
+
+.btn:hover {
+    background-color: #B0BEA9;
+}

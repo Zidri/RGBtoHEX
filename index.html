@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/046dd30d2f.js" crossorigin="anonymous"></script>
+    <title id="title">RGB to HEX</title>
+</head>
+
+<body>
+    <script src="script.js"></script>
+
+    <div class="header" id="header">
+        <h1>RGB to HEX</h1>
+    </div>
+    <div class="container">
+        <div class="display" id="display">
+            <div class="color" id="color"></div>
+            <div class="rgb" id="rgb">rgb(
+                <input type="number" min="0" max="255" value="0" id="redInput" oninput="updateColor()">
+                ,
+                <input type="number" min="0" max="255" value="0" id="greenInput" oninput="updateColor()">
+                ,
+                <input type="number" min="0" max="255" value="0" id="blueInput" oninput="updateColor()">
+                )
+            </div>
+            <div class="hex" id="hex">#000000</div>
+        </div>
+
+        <div class="buttonDisplay">
+            <button class="btn" id="convert" onclick="convertRGB()">Convert</button>
+        </div>
+
+    </div>
+</body>
+
+</html>
