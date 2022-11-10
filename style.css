@@ -93,6 +93,33 @@ h2 {
     background-color: #F1F7EE;
 }
 
+/*hex input*/
+.hex {
+    text-transform: uppercase;
+}
+
+.hex input {
+    width: 9rem;
+    height: 2rem;
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+
+    /*hide box styling*/
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    background-color: #F1F7EE;
+}
+
+/*warning message*/
+.warning {
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
 /*buttons*/
 .buttonDisplay {
     display: flex;

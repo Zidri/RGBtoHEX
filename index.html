@@ -20,19 +20,19 @@
         <div class="display" id="display">
             <div class="color" id="color"></div>
             <div class="rgb" id="rgb">rgb(
-                <input type="number" min="0" max="255" value="0" id="redInput" oninput="updateColor()">
+                <input type="number" min="0" max="255" value="0" id="redInput" oninput="convertRGB()">
                 ,
-                <input type="number" min="0" max="255" value="0" id="greenInput" oninput="updateColor()">
+                <input type="number" min="0" max="255" value="0" id="greenInput" oninput="convertRGB()">
                 ,
-                <input type="number" min="0" max="255" value="0" id="blueInput" oninput="updateColor()">
+                <input type="number" min="0" max="255" value="0" id="blueInput" oninput="convertRGB()">
                 )
             </div>
-            <div class="hex" id="hex">#000000</div>
+            <div class="hex" id="hex">
+                #<input type="text" value="000000" id="hexInput" oninput="convertHEX()">
+            </div>
         </div>
 
-        <div class="buttonDisplay">
-            <button class="btn" id="convert" onclick="convertRGB()">Convert</button>
-        </div>
+        <div class="warning" id="warning"></div>
 
     </div>
 </body>
