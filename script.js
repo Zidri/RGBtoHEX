@@ -155,6 +155,9 @@ function convertHEX() {
 
     //convert to rgb
     if (hex.length == 6) {
+        //hide warning
+        document.getElementById("warning").innerHTML = "";
+        
         //update color
         updateColor('hex');
 
@@ -172,7 +175,7 @@ function convertHEX() {
         document.getElementById("greenInput").value = green;
         document.getElementById("blueInput").value = blue;
     }
-    else {
+    else if(hex.length > 6) {
         //request valid hex code
         document.getElementById("warning").innerHTML = "Not a valid hex code";
     }
